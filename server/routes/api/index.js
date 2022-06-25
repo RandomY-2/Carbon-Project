@@ -26,6 +26,7 @@ router.use("/projects", ProjectRouter);
 // router.use("/git", GitRouter);
 router.use("/aws", AwsRouter);
 router.use("/admin", AdminRouter);
+router.use("/grapesStorage", GrapesStorageRouter);
 
 router.get("/isAdmin", async (req, res) => {
   const adminArray = process.env.ADMINS ? process.env.ADMINS.split(",") : [];
